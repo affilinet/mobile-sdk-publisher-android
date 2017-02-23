@@ -1,2 +1,2 @@
 # mobile-sdk-publisher-android
-Mobile SDK Publisher Android Packages
+Mobile Ad SDK for Publishers Android Packages
