@@ -48,11 +48,11 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
-        PublisherAccount account = new PublisherAccount({ACCOUNT-ID}, {PASSWORD});
+        PublisherAccount account = new PublisherAccount( {PUBLISHER-ID}, {PUBLISHER-PASSWORD});
         Session session = Session.getInstance();
 
         try {
-            session.open(getApplicationContext(), account,{PLATFORM-ID});
+            session.open(getApplicationContext(), account, {PLATFORM-ID});
         } catch (Exception e) {
             Log.v(TAG, e.getMessage());
         }
