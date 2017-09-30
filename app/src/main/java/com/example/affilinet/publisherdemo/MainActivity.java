@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
-        PublisherAccount account = new PublisherAccount( {PUBLISHER-ID}, {PUBLISHER-PASSWORD});
+        PublisherAccount account = new PublisherAccount({PUBLISHER-ID}, {PRODUCT-DATA-WEBSERVICE-PASSWORD});
         Session session = Session.getInstance();
 
         try {
@@ -62,8 +62,8 @@ public class MainActivity extends Activity {
         //
 
         // Display Ad Container (you get container ids via the affilinet publisher portal, see http://publisher.affili.net/Creatives/Adspaces.aspx
-        ContainerAd containerAd = new ContainerAd(session, "0005e691-32d9-3225-76d5-060ef0367e01", "my-pub-subid-sdkandroid");
-        //ContainerAd containerAd = new ContainerAd(session, "000bf6ec-010c-0012-4878-4ed144d840ac", "");
+        ContainerAd containerAd = new ContainerAd(session, "{PUBLISHER-CONTAINER-ID}", "{PUBLISHER-SUBID}");
+        //ContainerAd containerAd = new ContainerAd(session, "{PUBLISHER-CONTAINER-ID}");
 
         // Choose from standard adsizes defined or use your custom adsize
         containerAd.setAdSize(AdSize.FeaturePhoneLargeBanner);
