@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/demolayout" >
+
+    <TextView
+        android:id="@+id/text_adcontainer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Ad-Container Use Case" style="?android:attr/listSeparatorTextViewStyle"
+        android:padding="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/text_webservice"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="WebService Use Case" style="?android:attr/listSeparatorTextViewStyle"
+        android:padding="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/main_menu_list_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+</LinearLayout>
